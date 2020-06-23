@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <stdlib.h>
+void numoper(int numsuc[15], float totd[15], float Dire, int bus)
+void M800(int numsuc[15], float totd[15],Sm800[15])
+void ordenamiento(int numsuc[15], float totd[15])
+void carga(int numsuc[15], float totd[15])
+int main()
+{
+    int numsuc[15], i, bus;
+    float totd[15],Sm800[15],Dire;
+    carga(numsec, totd);
+    numoper(numsec, bus,, totrec, diarec);
+    M800(numsec, totd, Sm800);
+    ordenamiento(numsec, totd, Sm800);
+    for(i=0;i<15;i++)
+    {
+        printf("Sucursal: %d \n",numsuc[i]);
+        printf("El total recaudado en el dia es: %f \n",totd[i]);
+    }
+    printf("Las sucursales con una recaudacion mayor a 800 son:");
+    for(i=0,i<15;i++)
+    {
+        prinf("%f\n",Sm800[i]);
+    }
+    return 0;
+}
+void numoper(int numsuc[15], float totd[15], float Dire, int bus)
+{
+    int i, k, a;
+    printf("Inqurese la sucursal que desea encontrar.En caso de querer finalizar la operacion ingrese 0\n");
+    scanf("%d",&bus);
+    while(bus!=0)
+     {
+        k=0;
+        i=0;
+       while(k==0 && i<15)
+       {
+         if(bus== numsuc[i])
+          {
+            k=1;
+            a=i;
+          }
+          else
+          {
+           i++;
+          }
+
+       }
+        if(k==0)
+        {
+           printf("La sucura que se ha buscado\n");
+        }
+        else
+        {
+          Printf("Ingrese el nuevo valor de lo recaudado en el dia\n");
+          scanf("%f",totd[a]);
+        }
+        printf("Inqurese la sucursal que desea encontrar.En caso de querer finalizar la operacion ingrese 0\n");
+    scanf("%d",&bus);
+    }
+}
+void carga(int numsuc[15], float totd[15])
+{
+ int i;
+ for(i=0;i<15;i++)
+ {
+   printf("Ingrese el numero de sucursal\n");
+   scanf("%d",&numsuc[i]);
+   printf("Ingrese lo recaudado en el dia\n");
+   scanf("%f",&totd[i]);
+
+ }
+}
+void M800(int numsuc[15, float totd[15], float Sm800[15])
+{
+    int i, j;
+    for(i=0;i<15;i++)
+    {
+        if(totd[i] > 800)
+        {
+            Sm800[j] = numsuc[i];
+            j++;
+        }
+    }
+}
+void ordenamiento(int numsuc[15], float totd[15])
+{
+    int i, k=0, x, aux, aux2, b, b2;
+    while(k==0)
+    {
+        k=1;
+        x--;
+        for(i=0;i<x;i++)
+        {
+            if(numsuc[i] < numsuc[i++])
+            {
+                aux = numsuc[i];
+                aux2 = numsuc[i++];
+                numsuc[i]=aux2;
+                numsuc[i++]=aux1;
+                b = totd[i];
+                b2 = totd[i++];
+                totd[i]=b2;
+                totd[i++]=b;
+                k=0
+            }
+              x++;
+        }
+    }
+}
