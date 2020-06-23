@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-void numoper(int numsuc[15], float totd[15], float Dire, int bus)
-void M800(int numsuc[15], float totd[15],Sm800[15])
+void numoper(int numsuc[15], float totd[15], 
+float Dire, int bus)
+void M800(int numsuc[15], float 
+void ordenamiento(int numsuc[15], float totd[15])
+totd[15],Sm800[15])
 int main()
 {
     int numsuc[15], i, bus;
@@ -12,9 +15,9 @@ int main()
     for(i=0;i<15;i++)
     {
         printf("Sucursal: %d \n",numsuc[i]);
-        printf("El total recaudado en el dia es: %f \n",totd[i]);
+        printf("Total que se recaudo en el dia : %f \n",totd[i]);
     }
-    printf("Las sucursales con una recaudacion mayor a 800 son:");
+    printf("Las sucursales con recaudacione s de mas de 800$ son:");
     for(i=0,i<15;i++)
     {
         prinf("%f\n",Sm800[i]);
@@ -66,6 +69,31 @@ void mas de 800(int numsuc[15, float totd[15], float Sm800[15])
         {
             Sm800[j] = numsuc[i];
             j++;
+        }
+    }
+}
+void ordenamiento(int numsuc[15], float totd[15])
+{
+    int i, k=0, x, aux, aux2, b, b2;
+    while(k==0)
+    {
+        k=1;
+        x--;
+        for(i=0;i<x;i++)
+        {
+            if(numsuc[i] < numsuc[i++])
+            {
+                aux = numsuc[i];
+                aux2 = numsuc[i++];
+                numsuc[i]=aux2;
+                numsuc[i++]=aux1;
+                b = totd[i];
+                b2 = totd[i++];
+                totd[i]=b2;
+                totd[i++]=b;
+                k=0
+            }
+              x++;
         }
     }
 }
