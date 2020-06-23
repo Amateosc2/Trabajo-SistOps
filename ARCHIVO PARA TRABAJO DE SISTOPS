@@ -11,7 +11,6 @@ int main()
     carga(numsec, totd);
     numoper(numsec, bus,, totrec, diarec);
     M800(numsec, totd, Sm800);
-    ordenamiento(numsec, totd, Sm800);
     for(i=0;i<15;i++)
     {
         printf("Sucursal: %d \n",numsuc[i]);
@@ -71,7 +70,7 @@ void carga(int numsuc[15], float totd[15])
 
  }
 }
-void M800(int numsuc[15, float totd[15], float Sm800[15])
+void mas de 800(int numsuc[15, float totd[15], float Sm800[15])
 {
     int i, j;
     for(i=0;i<15;i++)
@@ -82,8 +81,4 @@ void M800(int numsuc[15, float totd[15], float Sm800[15])
             j++;
         }
     }
-}
-void ordenamiento(int numsuc[15], float totd[15])
-{
-    
 }
