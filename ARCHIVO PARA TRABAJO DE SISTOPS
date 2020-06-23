@@ -85,26 +85,5 @@ void M800(int numsuc[15, float totd[15], float Sm800[15])
 }
 void ordenamiento(int numsuc[15], float totd[15])
 {
-    int i, k=0, x, aux, aux2, b, b2;
-    while(k==0)
-    {
-        k=1;
-        x--;
-        for(i=0;i<x;i++)
-        {
-            if(numsuc[i] < numsuc[i++])
-            {
-                aux = numsuc[i];
-                aux2 = numsuc[i++];
-                numsuc[i]=aux2;
-                numsuc[i++]=aux1;
-                b = totd[i];
-                b2 = totd[i++];
-                totd[i]=b2;
-                totd[i++]=b;
-                k=0
-            }
-              x++;
-        }
-    }
+    
 }
