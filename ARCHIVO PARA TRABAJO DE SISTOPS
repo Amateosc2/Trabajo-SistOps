@@ -2,6 +2,7 @@
 #include <stdlib.h>
 void numoper(int numsuc[15], float totd[15], float Dire, int bus)
 void M800(int numsuc[15], float totd[15],Sm800[15])
+void carga(int numsuc[15], float totd[15])
 int main()
 {
     int numsuc[15], i, bus;
@@ -55,6 +56,19 @@ void numoper(int numsuc[15], float totd[15], float Dire, int bus)
         printf("Inqurese la sucursal que desea encontrar.En caso de querer finalizar la operacion ingrese 0\n");
     scanf("%d",&bus);
     }
+}
+
+void carga(int numsuc[15], float totd[15])
+{
+ int i;
+ for(i=0;i<15;i++)
+ {
+   printf("Ingrese el numero de sucursal\n");
+   scanf("%d",&numsuc[i]);
+   printf("Ingrese lo recaudado en el dia\n");
+   scanf("%f",&totd[i]);
+
+ }
 }
 
 void mas de 800(int numsuc[15, float totd[15], float Sm800[15])
